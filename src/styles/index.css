@@ -1,7 +1,13 @@
 :root {
     --color-background: #F5F5F5;
     --color-primary: #201E43;
+    --color-nav-button: rgba(43, 34, 61, 0.80);
+    --color-nav-button-hover: rgba(46, 34, 68, 0.9);
+
     --font-primary: "Blinker", serif;
+    --font-nav-button: "Nunito", serif;
+
+    --font-weight-nav-button-sb: 600;
 }
 
 * {
