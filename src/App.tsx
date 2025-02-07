@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <Header title="Upcoding" />
-      <IntroBanner />
-      <SpecCards />
+      <div style={{ paddingTop: "var(--header-height)" }}>
+        <IntroBanner />
+        <SpecCards />
+      </div>
     </>
   );
 }

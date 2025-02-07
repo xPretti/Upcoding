@@ -1,4 +1,7 @@
 :root {
+    --header-height: 60px;
+    --header-width: 100%;
+
     --color-background: #F5F5F5;
     --color-primary: #201E43;
     --color-secundary: rgba(43, 34, 61, 0.68);
@@ -22,5 +25,5 @@
 }
 
 body {
-    background-color: var(--color-backgorund);
+    background-color: var(--color-background);
 }
