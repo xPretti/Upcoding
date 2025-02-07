@@ -11,15 +11,16 @@
     font-weight: var(--font-weight-semibold);
     font-style: normal;
     font-size: 17px;
-    color: var(--color-nav-button);
+    color: var(--color-quinary);
     transition: all 0.2s;
 }
 
 .title:hover {
-    color: var(--color-nav-button-hover);
+    color: var(--color-quinary-hover);
 }
 
 .expanded {
     width: 16px;
     height: 16px;
+    color: var(--color-primary);
 }

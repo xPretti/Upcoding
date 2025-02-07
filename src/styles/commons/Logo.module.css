@@ -10,6 +10,7 @@
 .logo {
     width: 40px;
     height: 32px;
+    color: var(--color-primary);
 }
 
 .title {

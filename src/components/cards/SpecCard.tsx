@@ -1,7 +1,8 @@
 import styles from "@/styles/cards/SpecCard.module.css";
+import { ReactNode } from "react";
 
 type Props = {
-    icon: string;
+    icon: ReactNode;
     title: string;
     description: string;
 };
@@ -9,7 +10,13 @@ type Props = {
 export const SpecCard = ({ icon, title, description }: Props) => {
     return (
         <div className={styles.card}>
-            <img src={icon} alt="Icone" className={styles.icon} />
+            <div className={styles.header}>
+                <div className={styles.iconFrame}>
+                    <div className={styles.icon}>
+                        {icon}
+                    </div>
+                </div>
+            </div>
             <h3 className={styles.title}>{title}</h3>
             <p className={styles.description}>{description}</p>
         </div>
