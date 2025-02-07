@@ -1,4 +1,4 @@
-import styles from "@/styles/navigation/ButtonNav.module.css";
+import styles from "@/styles/buttons/NavButton.module.css";
 
 type Props = {
     title: string;
@@ -6,7 +6,7 @@ type Props = {
     expImg?: string;
 };
 
-export const ButtonNav = ({ title, expanded = false, expImg = '' }: Props) => {
+export const NavButton = ({ title, expanded = false, expImg = '' }: Props) => {
     return (
         <div className={styles.button}>
             <p className={styles.title}>{title}</p>

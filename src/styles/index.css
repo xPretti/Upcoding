@@ -1,17 +1,26 @@
 :root {
     --color-background: #F5F5F5;
     --color-primary: #201E43;
+    --color-secundary: rgba(43, 34, 61, 0.68);
     --color-nav-button: rgba(43, 34, 61, 0.80);
     --color-nav-button-hover: rgba(46, 34, 68, 0.9);
+    --color-white: #fff;
 
     --font-primary: "Blinker", serif;
+    --font-secundary: "Montserrat", serif;
     --font-nav-button: "Nunito", serif;
 
-    --font-weight-nav-button-sb: 600;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-backgorund);
 }

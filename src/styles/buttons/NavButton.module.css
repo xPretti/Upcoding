@@ -8,7 +8,7 @@
 
 .title {
     font-family: var(--font-nav-button);
-    font-weight: var(--font-weight-nav-button-sb);
+    font-weight: var(--font-weight-semibold);
     font-style: normal;
     font-size: 17px;
     color: var(--color-nav-button);
