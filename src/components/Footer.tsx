@@ -9,6 +9,8 @@ import DiscordIcon from '@/assets/discord.svg?react';
 import DocsIcon from '@/assets/docs.svg?react';
 import TermsIcon from '@/assets/terms.svg?react';
 
+import { TimeUtils } from '@/utils/TimeUtils';
+
 export const Footer = () => {
     return (
         <footer className={styles.footer}>
@@ -26,7 +28,7 @@ export const Footer = () => {
                         <IconTextFooterLink title="Termos de uso" icon={<TermsIcon />} />
                     </FooterCard>
                 </div>
-                <h1 className={styles.copyright}>Copyright © Upcoding 2025</h1>
+                <h1 className={styles.copyright}>Copyright © Upcoding {TimeUtils.getYear()}</h1>
             </div>
         </footer>
     );
