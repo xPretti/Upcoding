@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: auto;
+    color: var(--color-white);
+}
+
+.title {
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-white);
+}

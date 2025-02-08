@@ -5,11 +5,15 @@
     width: auto;
     cursor: pointer;
     user-select: none;
+    gap: 8px;
 }
 
 .logo {
-    width: 40px;
-    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: auto;
     color: var(--color-primary);
 }
 

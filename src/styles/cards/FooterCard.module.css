@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.content {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 20px;
+    color: var(--color-white);
+}

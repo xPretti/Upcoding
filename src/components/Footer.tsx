@@ -2,12 +2,32 @@ import styles from '@/styles/Footer.module.css';
 
 import footerImg from '@/assets/footer.png';
 import footerLayerImg from '@/assets/footerLayer.png';
+import { FooterCard } from './cards/FooterCard';
+import { IconTextFooterLink } from './links/IconTextFooterLink';
+
+import DiscordIcon from '@/assets/discord.svg?react';
+import DocsIcon from '@/assets/docs.svg?react';
+import TermsIcon from '@/assets/terms.svg?react';
 
 export const Footer = () => {
     return (
         <footer className={styles.footer}>
             <img src={footerImg} alt="Logo" className={styles.image} />
-            <img src={footerLayerImg} alt="Logo" className={styles.imageLayer} />
+            <div className={styles.footerContent}>
+                <img src={footerLayerImg} alt="Logo" className={styles.imageLayer} />
+                <div className={styles.content}>
+                    <FooterCard title="Comunidade">
+                        <IconTextFooterLink title="Discord" icon={<DiscordIcon />} />
+                    </FooterCard>
+                    <FooterCard title="Aprender">
+                        <IconTextFooterLink title="Documentação" icon={<DocsIcon />} />
+                    </FooterCard>
+                    <FooterCard title="Empresa">
+                        <IconTextFooterLink title="Termos de uso" icon={<TermsIcon />} />
+                    </FooterCard>
+                </div>
+                <h1 className={styles.copyright}>Copyright © Upcoding 2025</h1>
+            </div>
         </footer>
     );
 };
