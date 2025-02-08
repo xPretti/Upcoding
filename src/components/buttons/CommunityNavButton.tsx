@@ -1,9 +1,17 @@
-import { NavButton } from "./NavButton";
+import { DropdownButton } from "./DropdownButton";
 
 import DownArrow from '@/assets/downarrow.svg?react';
+import { DropdownItem } from './DropdownItemButton';
 
 export const CommunityNavButton = () => {
+
+    const getOptions = (): DropdownItem[] => {
+        return [
+            { title: "Discord", description: ["Canais de suporte.", "Comunidade oficial no discord."], onClick: () => console.log("Discord") },
+        ];
+    };
+
     return (
-        <NavButton title="Comunidade" expanded={true} expImg={<DownArrow />} />
+        <DropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
     );
 };

@@ -1,0 +1,54 @@
+.container {
+    position: relative;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.title {
+    font-family: var(--font-nav-button);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 17px;
+    color: var(--color-quinary);
+    transition: all 0.2s;
+}
+
+.title:hover {
+    color: var(--color-quinary-hover);
+}
+
+.expanded {
+    width: 16px;
+    height: 16px;
+    color: var(--color-primary);
+}
+
+.options {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 200%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    background-color: var(--color-background);
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+    padding: 0 25px 0 25px;
+    gap: 15px;
+}
+
+.options> :first-child {
+    padding-top: 25px;
+}
+
+.options> :last-child {
+    padding-bottom: 25px;
+}

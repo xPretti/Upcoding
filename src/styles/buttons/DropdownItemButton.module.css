@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: start;
+    cursor: pointer;
+    line-height: 1.3;
+}
+
+.item:hover .title {
+    transition: all 0.1s;
+    color: var(--color-gold);
+}
+
+.title {
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+    font-size: 20px;
+    color: var(--color-tertiary);
+    white-space: nowrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 15px;
+    color: var(--color-quaternary);
+    white-space: nowrap;
+}
