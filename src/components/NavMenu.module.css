@@ -2,6 +2,10 @@
     display: flex;
     max-height: 100%;
     width: 100%;
+}
+
+.content {
+    display: flex;
     user-select: none;
     padding-left: 95px;
     gap: 20px;

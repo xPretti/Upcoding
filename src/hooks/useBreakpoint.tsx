@@ -1,18 +1,18 @@
 import { useEffect, useState } from "react";
 
 const breakpoints = {
-    sm: 640,
-    md: 768,
     lg: 950,
+    md: 768,
+    sm: 640,
 };
 
 const getBreakpoint = (width: number): string => {
     for (const [key, value] of Object.entries(breakpoints)) {
-        if (width <= value) {
+        if (width >= value) {
             return key;
         }
     }
-    return "lg";
+    return "sm";
 };
 
 export const useBreakpoint = () => {
