@@ -1,4 +1,4 @@
-import styles from "@/styles/commons/Logo.module.css";
+import styles from "./Logo.module.css";
 import { ReactNode } from "react";
 
 type Props = {

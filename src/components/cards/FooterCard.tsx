@@ -1,4 +1,4 @@
-import styles from "@/styles/cards/FooterCard.module.css";
+import styles from "./FooterCard.module.css";
 import { ReactNode } from "react";
 
 type Props = {

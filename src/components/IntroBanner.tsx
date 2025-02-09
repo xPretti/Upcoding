@@ -1,4 +1,4 @@
-import styles from "@/styles/IntroBanner.module.css";
+import styles from "./IntroBanner.module.css";
 import { IntroButton } from "./buttons/IntroButton";
 
 export const IntroBanner = () => {

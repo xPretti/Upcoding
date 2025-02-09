@@ -1,4 +1,4 @@
-import styles from "@/styles/NavMenu.module.css";
+import styles from "./NavMenu.module.css";
 import { ProductsNavButton } from "./buttons/ProductsNavButton";
 import { CommunityNavButton } from "./buttons/CommunityNavButton";
 import { useBreakpoint } from "@/hooks/useBreakpoint";

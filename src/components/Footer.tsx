@@ -1,4 +1,4 @@
-import styles from '@/styles/Footer.module.css';
+import styles from './Footer.module.css';
 
 import footerImg from '@/assets/footer.png';
 import footerLayerImg from '@/assets/footerLayer.png';

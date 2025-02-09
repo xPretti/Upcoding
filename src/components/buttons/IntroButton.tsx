@@ -1,4 +1,4 @@
-import styles from "@/styles/buttons/IntroButton.module.css";
+import styles from "./IntroButton.module.css";
 import { ReactNode } from "react";
 
 type Props = {

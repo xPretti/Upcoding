@@ -1,4 +1,4 @@
-import styles from "@/styles/links/IconTextFooterLink.module.css";
+import styles from "./IconTextFooterLink.module.css";
 import { ReactNode } from "react";
 
 type Props = {

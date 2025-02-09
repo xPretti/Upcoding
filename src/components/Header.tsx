@@ -1,5 +1,5 @@
 
-import styles from '@/styles/Header.module.css';
+import styles from './Header.module.css';
 import { Logo } from './commons/Logo';
 import { NavMenu } from './NavMenu';
 

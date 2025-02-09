@@ -1,5 +1,5 @@
 import { SpecCard } from "./cards/SpecCard";
-import styles from "@/styles/SpecCards.module.css";
+import styles from "./SpecCards.module.css";
 
 import CommunityIcon from '@/assets/community.svg?react';
 import SupportIcon from '@/assets/support.svg?react';

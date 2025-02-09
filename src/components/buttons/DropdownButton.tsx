@@ -1,4 +1,4 @@
-import styles from "@/styles/buttons/DropdownButton.module.css";
+import styles from "./DropdownButton.module.css";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { DropdownItem, DropdownItemButton } from "./DropdownItemButton";
 

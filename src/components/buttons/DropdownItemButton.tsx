@@ -1,4 +1,4 @@
-import styles from "@/styles/buttons/DropdownItemButton.module.css";
+import styles from "./DropdownItemButton.module.css";
 
 export type DropdownItem = {
     title: string;
