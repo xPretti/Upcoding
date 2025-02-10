@@ -22,11 +22,14 @@
 }
 
 
-.button:hover {
-    background-color: var(--color-secundary);
+@media(hover: hover) and (pointer: fine) {
+    .button:hover {
+        background-color: var(--color-secundary);
+    }
 }
+
 
 .button:active {
     transition: all 0.05s;
-    background-color: var(--color-primary);
+    opacity: 0.8;
 }

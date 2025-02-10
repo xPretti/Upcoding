@@ -1,17 +1,28 @@
-import { DropdownButton } from "./DropdownButton";
+import { DropdownButton } from "../dropdown/DropdownButton";
 
 import DownArrow from '@/assets/downarrow.svg?react';
-import { DropdownItem } from './DropdownItemButton';
+import { VerticalDropdownButton } from "../dropdown/VerticalDropdownButton";
+import { DropdownItemType } from "../@types/DropdownItemType";
 
-export const CommunityNavButton = () => {
+type Props = {
+    isVertical?: boolean;
+};
 
-    const getOptions = (): DropdownItem[] => {
+export const CommunityNavButton = ({ isVertical = false }: Props) => {
+
+    const getOptions = (): DropdownItemType[] => {
         return [
             { title: "Discord", description: ["Canais de suporte.", "Comunidade oficial no discord."], onClick: () => console.log("Discord") },
         ];
     };
 
     return (
-        <DropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
+        <>
+            {isVertical ? (
+                <VerticalDropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
+            ) : (
+                <DropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
+            )}
+        </>
     );
 };

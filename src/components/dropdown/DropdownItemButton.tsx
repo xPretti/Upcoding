@@ -1,12 +1,7 @@
+import { DropdownItemType } from "../@types/DropdownItemType";
 import styles from "./DropdownItemButton.module.css";
 
-export type DropdownItem = {
-    title: string;
-    description: string | string[];
-    onClick: () => void;
-};
-
-export const DropdownItemButton = ({ title, description, onClick }: DropdownItem) => {
+export const DropdownItemButton = ({ title, description, onClick }: DropdownItemType) => {
     return (
         <div className={styles.item} onClick={onClick}>
             <p className={styles.title}>

@@ -51,8 +51,16 @@
     color: var(--color-primary);
 }
 
+@media(hover: hover) and (pointer: fine) {
+    .collapseArea:hover .collapseButton {
+        color: var(--color-gold);
+    }
+}
+
 .collapseArea:active .collapseButton {
+    transition: all 0.05s;
     color: var(--color-gold);
+    opacity: 0.3;
 }
 
 .hamburgerMenu {

@@ -14,35 +14,36 @@
     font-family: var(--font-nav-button);
     font-weight: var(--font-weight-semibold);
     font-style: normal;
-    font-size: 17px;
-    color: var(--color-quinary);
+    font-size: 25px;
+    color: var(--color-secundary);
     transition: all 0.2s;
 }
 
-.title:hover {
-    color: var(--color-quinary-hover);
+@media(hover: hover) and (pointer: fine) {
+    .title:hover {
+        color: var(--color-quinary-hover);
+    }
 }
 
 .expanded {
-    width: 16px;
-    height: 16px;
-    color: var(--color-primary);
+    width: 24px;
+    height: 24px;
+    color: var(--color-secundary);
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .button:hover .expanded {
+        color: var(--color-quinary-hover);
+    }
 }
 
 .options {
     position: absolute;
     display: flex;
-    flex-direction: column;
-    top: 200%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 100%;
     width: auto;
     height: auto;
-    background-color: var(--color-background);
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
-    padding: 0 25px 0 25px;
-    gap: 15px;
+    z-index: 999;
 }
 
 .options> :first-child {

@@ -7,8 +7,8 @@ export const HamburgerMenu = () => {
     return (
         <div className={styles.container}>
             <div className={styles.buttons}>
-                <ProductsNavButton />
-                <CommunityNavButton />
+                <ProductsNavButton isVertical={true} />
+                <CommunityNavButton isVertical={true} />
             </div>
         </div>
     );
