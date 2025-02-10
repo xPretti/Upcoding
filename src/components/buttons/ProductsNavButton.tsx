@@ -1,4 +1,4 @@
-import { DropdownItemType } from "../@types/DropdownItemType";
+import { DropdownItemType } from "../../@types/DropdownItemType";
 import { DropdownButton } from "../dropdown/DropdownButton";
 
 import DownArrow from '@/assets/downarrow.svg?react';

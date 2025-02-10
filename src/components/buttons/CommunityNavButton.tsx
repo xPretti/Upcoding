@@ -2,7 +2,7 @@ import { DropdownButton } from "../dropdown/DropdownButton";
 
 import DownArrow from '@/assets/downarrow.svg?react';
 import { VerticalDropdownButton } from "../dropdown/VerticalDropdownButton";
-import { DropdownItemType } from "../@types/DropdownItemType";
+import { DropdownItemType } from "../../@types/DropdownItemType";
 
 type Props = {
     isVertical?: boolean;

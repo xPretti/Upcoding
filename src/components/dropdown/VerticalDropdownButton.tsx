@@ -1,7 +1,7 @@
 import styles from "./VerticalDropdownButton.module.css";
 import { ReactNode, useState } from "react";
 import { DropdownItems } from "./DropdownItems";
-import { DropdownItemType } from "../@types/DropdownItemType";
+import { DropdownItemType } from "../../@types/DropdownItemType";
 import { DropdownItemButton } from "./DropdownItemButton";
 import { useClickOutside } from "@/hooks/useClickOutside";
 
