@@ -12,7 +12,7 @@ export const CommunityNavButton = ({ isVertical = false }: Props) => {
 
     const getOptions = (): DropdownItemType[] => {
         return [
-            { title: "Discord", description: ["Canais de suporte.", "Comunidade oficial no discord."], onClick: () => console.log("Discord") },
+            { title: "Discord", description: ["Canais de suporte.", "Comunidade oficial no discord."], onClick: () => window.open("https://discord.upcoding.net/", "_blank") },
         ];
     };
 
