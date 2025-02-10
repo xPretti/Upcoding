@@ -6,6 +6,7 @@
     cursor: pointer;
     user-select: none;
     gap: 8px;
+    text-decoration: none;
 }
 
 .logo {

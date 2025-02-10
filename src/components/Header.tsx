@@ -23,7 +23,7 @@ export const Header = ({ title = '' }: Props) => {
         <nav className={styles.header}>
             <div className={styles.area}>
                 <div className={styles.left}>
-                    <Logo title={title} image={<LogoIcon />}></Logo>
+                    <Logo title={title} image={<LogoIcon />} url="/"></Logo>
                 </div>
                 <div className={styles.menu}>
                     {breackpoint == "lg"
