@@ -19,13 +19,13 @@ export const Footer = () => {
                 <img src={footerLayerImg} alt="Logo" className={styles.imageLayer} />
                 <div className={styles.content}>
                     <FooterCard title="Comunidade">
-                        <IconTextFooterLink title="Discord" icon={<DiscordIcon />} />
+                        <IconTextFooterLink title="Discord" icon={<DiscordIcon />} url="https://discord.upcoding.net/" />
                     </FooterCard>
                     <FooterCard title="Aprender">
-                        <IconTextFooterLink title="Documentação" icon={<DocsIcon />} />
+                        <IconTextFooterLink title="Documentação" icon={<DocsIcon />} url="https://upcoding.net/docs" />
                     </FooterCard>
                     <FooterCard title="Empresa">
-                        <IconTextFooterLink title="Termos de uso" icon={<TermsIcon />} />
+                        <IconTextFooterLink title="Termos de uso" icon={<TermsIcon />} url="https://upcoding.net/terms" />
                     </FooterCard>
                 </div>
                 <h1 className={styles.copyright}>Copyright © Upcoding {TimeUtils.getYear()}</h1>

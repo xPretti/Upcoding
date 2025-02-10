@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: var(--header-height);
+    width: var(--header-width);
     max-width: 1920px;
     padding: 10px;
 }

@@ -11,6 +11,7 @@
     --color-quinary-hover: rgb(43, 34, 61);
     --color-white: #fff;
     --color-gold: #efbf04;
+    --color-transparent: transparent;
 
 
     --font-primary: "Blinker", serif;
@@ -35,4 +36,21 @@
 
 body {
     background-color: var(--color-background);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #4e4a57;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-quaternary);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9a91aa;
 }
