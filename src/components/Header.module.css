@@ -56,12 +56,12 @@
 }
 
 @media(hover: hover) and (pointer: fine) {
-    .collapseArea:hover .collapseButton {
+    .collapseButton:hover {
         color: var(--color-gold);
     }
 }
 
-.collapseArea:active .collapseButton {
+.collapseButton:active {
     transition: all 0.05s;
     color: var(--color-gold);
     opacity: 0.3;
@@ -71,8 +71,17 @@
     display: flex;
     align-items: start;
     justify-content: left;
+    flex-direction: column;
     width: auto;
     height: auto;
     gap: 20px;
     padding: 25px;
+}
+
+.languageSelect {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
 }

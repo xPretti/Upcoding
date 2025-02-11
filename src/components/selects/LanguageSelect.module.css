@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.icon {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: auto;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.select {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 16px;
+    appearance: none;
+}
+
+.option {
+    font-family: var(--font-tertiary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 16px;
+    color: var(--color-tertiary);
+    background-color: aqua;
+}
