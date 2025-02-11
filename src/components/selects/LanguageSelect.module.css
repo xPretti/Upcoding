@@ -3,31 +3,82 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    gap: 5px;
 }
+
+
+.selectLanguage {
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    user-select: none;
+    font-family: var(--font-quaternary);
+    font-weight: var(--font-weight-semibold);
+    font-style: normal;
+    font-size: 17px;
+    color: var(--color-tertiary);
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .container:hover .selectLanguage {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+
+    }
+}
+
+@media(pointer: coarse) {
+    .selectLanguage {
+        opacity: 1;
+    }
+}
+
+.optionSelect {
+    display: flex;
+    color: var(--color-primary-saturated) !important;
+}
+
 
 .icon {
     display: inline-block;
     align-items: center;
     justify-content: center;
-    width: 18px;
-    height: auto;
     color: var(--color-primary);
-    cursor: pointer;
+    width: 19px;
+    height: 19px;
 }
 
-.select {
+.options {
     position: absolute;
-    opacity: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    top: calc(var(--header-height) - 100%);
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    z-index: 999;
+}
+
+.test {
+    background-color: red;
+}
+
+/* .select {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
     border: none;
-    background-color: transparent;
-    font-family: var(--font-tertiary);
-    font-weight: var(--font-weight-semibold);
-    font-style: normal;
     font-size: 16px;
-    appearance: none;
+    cursor: pointer;
+    color: #dddd
 }
 
 .option {
@@ -36,5 +87,6 @@
     font-style: normal;
     font-size: 16px;
     color: var(--color-tertiary);
-    background-color: aqua;
-}
+    border: none;
+    justify-items: left;
+} */

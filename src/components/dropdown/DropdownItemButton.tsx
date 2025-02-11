@@ -1,15 +1,23 @@
 import { DropdownItemType } from "../../@types/DropdownItemType";
 import styles from "./DropdownItemButton.module.css";
 
-export const DropdownItemButton = ({ title, description, onClick }: DropdownItemType) => {
+type Props = {
+    dropdownItemType: DropdownItemType;
+    classItem?: string;
+    classTitle?: string;
+    classContent?: string;
+};
+
+export const DropdownItemButton = ({ dropdownItemType, classItem, classTitle, classContent }: Props) => {
+    const { title, description, onClick } = dropdownItemType;
     return (
-        <div className={styles.item} onClick={onClick}>
-            <p className={styles.title}>
+        <div className={`${styles.item} ${classItem}`} onClick={onClick}>
+            <p className={`${styles.title} ${classTitle}`}>
                 {title}
             </p>
-            <div className={styles.content}>
+            {description && <div className={`${styles.content} ${classContent}`}>
                 {Array.isArray(description) ? description.map((item, index) => <p key={index}>{item}</p>) : description}
-            </div>
-        </div>
+            </div>}
+        </div >
     );
 };

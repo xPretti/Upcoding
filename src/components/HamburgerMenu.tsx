@@ -1,7 +1,7 @@
 import styles from "./HamburgerMenu.module.css";
 
 import { CommunityNavButton } from "./buttons/CommunityNavButton";
-import { ProductsNavButton } from "./buttons/ProductsNavButton";
+import { ProductsNavButton } from './buttons/ProductsNavButton';
 
 export const HamburgerMenu = () => {
     return (

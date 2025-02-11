@@ -21,6 +21,18 @@ export const DropdownButton = ({ title, options, expImg = undefined }: Props) =>
 
     const containerRef = useClickOutside<HTMLDivElement>({ onClickOutside: closeDropdown });
 
+    const getDropitemType = (options: DropdownItemType): DropdownItemType => {
+        const newOptions: DropdownItemType = {
+            title: options.title,
+            description: options.description,
+            onClick: () => {
+                handleClick();
+                options.onClick();
+            }
+        };
+        return newOptions;
+    };
+
     return (
         <div ref={containerRef} className={styles.container} onClick={toggleDropdown}>
             <div className={styles.button} >
@@ -33,7 +45,7 @@ export const DropdownButton = ({ title, options, expImg = undefined }: Props) =>
                 <div className={styles.options}>
                     <DropdownItems>
                         {options.map((option, index) => (
-                            <DropdownItemButton key={index} title={option.title} description={option.description} onClick={() => { handleClick(); option.onClick(); }} />
+                            <DropdownItemButton key={index} dropdownItemType={getDropitemType(option)} />
                         ))}
                     </DropdownItems>
                 </div>
