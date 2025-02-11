@@ -10,4 +10,5 @@
     align-items: start;
     flex-direction: column;
     user-select: none;
+    gap: 12px;
 }

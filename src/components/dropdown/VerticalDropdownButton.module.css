@@ -8,13 +8,14 @@
     justify-content: center;
     gap: 3px;
     cursor: pointer;
+
 }
 
 .title {
     font-family: var(--font-nav-button);
     font-weight: var(--font-weight-semibold);
     font-style: normal;
-    font-size: 25px;
+    font-size: 17px;
     color: var(--color-secundary);
     transition: all 0.2s;
 }

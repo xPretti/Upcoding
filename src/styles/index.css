@@ -2,6 +2,8 @@
     --header-height: 60px;
     --header-width: 100%;
 
+    --color-header-outline: #201e4311;
+    --color-header: #F5F5F5;
     --color-background: #F5F5F5;
     --color-primary: #201E43;
     --color-secundary: rgba(43, 34, 61, 0.68);
@@ -13,6 +15,7 @@
     --color-gold: #efbf04;
     --color-transparent: transparent;
 
+    --border-header-size: 1px;
 
     --font-primary: "Blinker", serif;
     --font-secundary: "Montserrat", serif;
