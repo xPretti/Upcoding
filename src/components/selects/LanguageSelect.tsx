@@ -1,7 +1,7 @@
 import styles from "./LanguageSelect.module.css";
 
 import { LanguageType } from "@/@types/LanguageType";
-import { useState, CSSProperties } from 'react';
+import { useState } from 'react';
 import { useTranslation } from "react-i18next";
 
 import LanguageIcon from '@/assets/translate.svg?react';
