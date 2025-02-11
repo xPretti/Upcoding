@@ -47,11 +47,3 @@
     height: auto;
     z-index: 999;
 }
-
-.options> :first-child {
-    padding-top: 25px;
-}
-
-.options> :last-child {
-    padding-bottom: 25px;
-}

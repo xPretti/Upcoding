@@ -1,4 +1,6 @@
-import styles from "./VerticalDropdownButton.module.css";
+import styles from "./DropdownButton.module.css";
+import verticalStyles from "./VerticalDropdownButton.module.css";
+
 import { ReactNode, useState } from "react";
 import { DropdownItems } from "./DropdownItems";
 import { DropdownItemType } from "../../@types/DropdownItemType";
@@ -30,7 +32,7 @@ export const VerticalDropdownButton = ({ title, options, expImg = undefined }: P
                 </div>
             </div>
             {isOpen && (
-                <div className={styles.options}>
+                <div className={verticalStyles.options}>
                     <DropdownItems>
                         {options.map((option, index) => (
                             <DropdownItemButton key={index} title={option.title} description={option.description} onClick={() => { handleClick(); option.onClick(); }} />

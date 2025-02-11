@@ -5,11 +5,12 @@
     justify-items: start;
     cursor: pointer;
     line-height: 1.3;
+    width: 100%;
 }
 
 .item:hover .title {
     transition: all 0.1s;
-    color: var(--color-gold);
+    color: var(--color-primary-saturated);
 }
 
 .title {

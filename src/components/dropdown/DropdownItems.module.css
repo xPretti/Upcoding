@@ -8,6 +8,26 @@
     border-color: var(--color-header-outline);
     border-style: solid;
     border-width: 0px var(--border-header-size) var(--border-header-size) var(--border-header-size);
-    padding: 0 25px 0 25px;
-    gap: 15px;
+}
+
+
+.container> :first-child {
+    border-radius: 10px 10px 0px 0px;
+
+    padding: 25px 25px 0px 25px;
+}
+
+.container>*:not(:first-child):not(:last-child) {
+    padding: 25px 25px 0px 25px;
+}
+
+
+.container> :last-child {
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px 25px 25px 25px;
+}
+
+.container> :only-child {
+    border-radius: 10px;
+    padding: 25px;
 }
