@@ -1,17 +1,19 @@
+import { useTranslation } from "react-i18next";
 import styles from "./IntroBanner.module.css";
 import { IntroButton } from "./buttons/IntroButton";
 
 export const IntroBanner = () => {
+    const { t } = useTranslation();
     return (
         <div className={styles.container}>
             <div className={styles.banner}>
                 <h1 className={styles.title}>
-                    Soluções otimizadas com alta qualidade
+                    {t("intro-title")}
                 </h1>
                 <p className={styles.description}>
-                    Soluções inteligentes para MetaTrader 5: indicadores e robôs que aprimoram a análise e execução de estratégias no mercado financeiro.
+                    {t("intro-description")}
                 </p>
-                <IntroButton>Produtos</IntroButton>
+                <IntroButton>{t("products")}</IntroButton>
             </div>
         </div>
     );

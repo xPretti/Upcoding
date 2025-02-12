@@ -9,12 +9,9 @@ import { useClickOutside } from "@/hooks/useClickOutside";
 import { DropdownItems } from "../dropdown/DropdownItems";
 import { DropdownItemButton } from "../dropdown/DropdownItemButton";
 import { DropdownItemType } from "@/@types/DropdownItemType";
+import { getLangs } from "@/libs/i18n";
 
-type Props = {
-    languages: LanguageType[];
-};
-
-export const LanguageSelect = ({ languages }: Props) => {
+export const LanguageSelect = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const { t, i18n } = useTranslation();
@@ -51,7 +48,7 @@ export const LanguageSelect = ({ languages }: Props) => {
             {isOpen && (
                 <div className={styles.options}>
                     <DropdownItems>
-                        {languages.map((option, index) => (
+                        {getLangs().map((option, index) => (
                             <>
                                 {option.type === language
                                     ? <DropdownItemButton classTitle={styles.optionSelect} key={index} dropdownItemType={getDropitemType(option)} />

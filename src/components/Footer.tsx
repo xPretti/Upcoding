@@ -10,25 +10,29 @@ import DocsIcon from '@/assets/docs.svg?react';
 import TermsIcon from '@/assets/terms.svg?react';
 
 import { TimeUtils } from '@/utils/TimeUtils';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+
+    const { t } = useTranslation();
+
     return (
         <footer className={styles.footer}>
             <img src={footerImg} alt="Logo" className={styles.image} />
             <div className={styles.footerContent}>
                 <img src={footerLayerImg} alt="Logo" className={styles.imageLayer} />
                 <div className={styles.content}>
-                    <FooterCard title="Comunidade">
-                        <IconTextFooterLink title="Discord" icon={<DiscordIcon />} url="https://discord.upcoding.net/" />
+                    <FooterCard title={t("footer-community")}>
+                        <IconTextFooterLink title={t("discord")} icon={<DiscordIcon />} url="https://discord.upcoding.net/" />
                     </FooterCard>
-                    <FooterCard title="Aprender">
-                        <IconTextFooterLink title="Documentação" icon={<DocsIcon />} url="https://upcoding.net/docs" />
+                    <FooterCard title={t("footer-learn")}>
+                        <IconTextFooterLink title={t("footer-item-docs")} icon={<DocsIcon />} url="https://upcoding.net/docs" />
                     </FooterCard>
-                    <FooterCard title="Empresa">
-                        <IconTextFooterLink title="Termos de uso" icon={<TermsIcon />} url="https://upcoding.net/terms" />
+                    <FooterCard title={t("footer-enterprise")}>
+                        <IconTextFooterLink title={t("footer-item-terms")} icon={<TermsIcon />} url="https://upcoding.net/terms" />
                     </FooterCard>
                 </div>
-                <h1 className={styles.copyright}>Copyright © Upcoding {TimeUtils.getYear()}</h1>
+                <h1 className={styles.copyright}>{t("footer-copyright", { year: TimeUtils.getYear() })}</h1>
             </div>
         </footer>
     );

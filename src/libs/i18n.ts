@@ -4,6 +4,7 @@ import { initReactI18next } from 'react-i18next';
 
 import en_Trans from '@/locales/en.json';
 import pt_Br_Trans from '@/locales/pt_BR.json';
+import { LanguageType } from '@/@types/LanguageType';
 
 i18n
     .use(initReactI18next)
@@ -16,3 +17,8 @@ i18n
         },
         fallbackLng: 'en'
     });
+
+export const getLangs = (): LanguageType[] => [
+    { type: "pt_Br", text: "Português" },
+    { type: "en", text: "English" }
+];

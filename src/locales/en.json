@@ -1,7 +1,30 @@
 {
     "translation": {
         "language": "English",
-        "welcome": "Welcome",
-        "home": "Home Page"
+        "products": "Products",
+        "community": "Community",
+        "scriptbot": "ScriptBot",
+        "scriptbot-description": "Multi strategy robot.",
+        "all-products": "All products",
+        "all-products-description": "See all products.",
+        "discord": "Discord",
+        "discord-description": [
+            "Support channels.",
+            "Official community on discord."
+        ],
+        "intro-title": "Optimized solutions with high quality",
+        "intro-description": "Smart solutions for MetaTrader 5: indicators and robots that improve analysis and execution of trading strategies in the financial market.",
+        "card-products": "Products",
+        "card-products-description": "Quality Guaranteed",
+        "card-community": "Community",
+        "card-community-description": "Community Expansion",
+        "card-support": "24/7",
+        "card-support-description": "Live Support",
+        "footer-community": "Community",
+        "footer-learn": "Learning",
+        "footer-enterprise": "Enterprise",
+        "footer-item-terms": "Terms of Use",
+        "footer-item-docs": "Documentation",
+        "footer-copyright": "Copyright © Upcoding {{year}}"
     }
 }

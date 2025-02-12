@@ -3,6 +3,7 @@ import { DropdownButton } from "../dropdown/DropdownButton";
 
 import DownArrow from '@/assets/downarrow.svg?react';
 import { VerticalDropdownButton } from "../dropdown/VerticalDropdownButton";
+import { useTranslation } from "react-i18next";
 
 type Props = {
     isVertical?: boolean;
@@ -10,19 +11,21 @@ type Props = {
 
 export const ProductsNavButton = ({ isVertical = false }: Props) => {
 
+    const { t } = useTranslation();
+
     const getOptions = (): DropdownItemType[] => {
         return [
-            { title: "ScriptBot", description: "Robô multi estrategia.", onClick: () => console.log("ScriptBot") },
-            { title: "Todos", description: "Ver todos os produtos", onClick: () => console.log("Todos") },
+            { title: t("scriptbot"), description: t("scriptbot-description"), onClick: () => console.log("ScriptBot") },
+            { title: t("all-products"), description: t("all-products-description"), onClick: () => console.log("Todos") },
         ];
     };
 
     return (
         <>
             {isVertical ? (
-                <VerticalDropdownButton title="Produtos" options={getOptions()} expImg={<DownArrow />} />
+                <VerticalDropdownButton title={t('products')} options={getOptions()} expImg={<DownArrow />} />
             ) : (
-                <DropdownButton title="Produtos" options={getOptions()} expImg={<DownArrow />} />
+                <DropdownButton title={t('products')} options={getOptions()} expImg={<DownArrow />} />
             )}
         </>
     );

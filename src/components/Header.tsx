@@ -31,7 +31,7 @@ export const Header = ({ title = '' }: Props) => {
                         ?
                         <>
                             <NavMenu />
-                            <LanguageSelect languages={[{ type: "pt_Br", text: "Português" }, { type: "en", text: "English" }]} />
+                            <LanguageSelect />
                         </>
                         :
                         <div className={styles.collapseArea}>
@@ -44,7 +44,7 @@ export const Header = ({ title = '' }: Props) => {
                 <div className={styles.hamburgerMenu}>
                     <HamburgerMenu />
                     <div className={styles.languageSelect}>
-                        <LanguageSelect languages={[{ type: "pt_Br", text: "Português" }, { type: "en", text: "English" }]} />
+                        <LanguageSelect />
                     </div>
                 </div>}
         </nav >

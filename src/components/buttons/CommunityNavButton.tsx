@@ -3,6 +3,7 @@ import { DropdownButton } from "../dropdown/DropdownButton";
 import DownArrow from '@/assets/downarrow.svg?react';
 import { VerticalDropdownButton } from "../dropdown/VerticalDropdownButton";
 import { DropdownItemType } from "../../@types/DropdownItemType";
+import { useTranslation } from "react-i18next";
 
 type Props = {
     isVertical?: boolean;
@@ -10,18 +11,20 @@ type Props = {
 
 export const CommunityNavButton = ({ isVertical = false }: Props) => {
 
+    const { t } = useTranslation();
+
     const getOptions = (): DropdownItemType[] => {
         return [
-            { title: "Discord", description: ["Canais de suporte.", "Comunidade oficial no discord."], onClick: () => window.open("https://discord.upcoding.net/", "_blank") },
+            { title: t('discord'), description: t('discord-description', { returnObjects: true }) as string[], onClick: () => window.open("https://discord.upcoding.net/", "_blank") },
         ];
     };
 
     return (
         <>
             {isVertical ? (
-                <VerticalDropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
+                <VerticalDropdownButton title={t('community')} options={getOptions()} expImg={<DownArrow />} />
             ) : (
-                <DropdownButton title="Comunidade" options={getOptions()} expImg={<DownArrow />} />
+                <DropdownButton title={t('community')} options={getOptions()} expImg={<DownArrow />} />
             )}
         </>
     );
