@@ -16,7 +16,7 @@ export const ProductsNavButton = ({ isVertical = false }: Props) => {
     const getOptions = (): DropdownItemType[] => {
         return [
             { title: t("scriptbot"), description: t("scriptbot-description"), onClick: () => console.log("ScriptBot") },
-            { title: t("all-products"), description: t("all-products-description"), onClick: () => console.log("Todos") },
+            // { title: t("all-products"), description: t("all-products-description"), onClick: () => console.log("Todos") },
         ];
     };
 

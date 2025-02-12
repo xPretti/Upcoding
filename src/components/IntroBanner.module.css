@@ -21,9 +21,9 @@
     font-weight: var(--font-weight-bold);
     font-style: normal;
     text-align: center;
-    font-size: 44px;
+    font-size: 54px;
     color: var(--color-primary);
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .description {

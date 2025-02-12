@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import styles from "./IntroBanner.module.css";
-import { IntroButton } from "./buttons/IntroButton";
 
 export const IntroBanner = () => {
     const { t } = useTranslation();
@@ -13,7 +12,7 @@ export const IntroBanner = () => {
                 <p className={styles.description}>
                     {t("intro-description")}
                 </p>
-                <IntroButton>{t("products")}</IntroButton>
+                {/* <IntroButton>{t("products")}</IntroButton> */}
             </div>
         </div>
     );
